@@ -53,8 +53,8 @@
     const index = comments.findIndex(obj => {
       return obj.id == 823423;
     });
-    delete comments[index];
-    console.log(comments);
+    const newArr = comments.splice(0, 2);
+    console.table(comments);
 
   </script>
 </body>
